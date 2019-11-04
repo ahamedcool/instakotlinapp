@@ -133,7 +133,7 @@
             app:layout_anchorGravity="bottom|center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/bottom_navigation_menu"
-            app:itemIconTint="@android:color/black"/>
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
