@@ -119,7 +119,7 @@
         <View
             android:id="@+id/golgelikBottom"
             android:layout_width="wrap_content"
-            android:layout_height="2dp"
+            android:layout_height="1dp"
             android:background="@color/golgelik"
             app:layout_constraintBottom_toBottomOf="@+id/homeViewPager"
             app:layout_constraintEnd_toEndOf="parent"
