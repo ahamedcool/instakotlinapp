@@ -4,4 +4,7 @@
     <string name="imgdirectmessage">imgDirectMessage</string>
     <string name="imgtabcamera">imgTabCamera</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

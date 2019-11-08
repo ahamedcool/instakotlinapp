@@ -1,14 +1,14 @@
 package com.example.instakotlinapp.Home
 
-import android.graphics.Color
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.annotation.RequiresApi
 import com.example.instakotlinapp.R
 import com.example.instakotlinapp.utils.BottomNavigationViewHelper
 import com.example.instakotlinapp.utils.HomePagerAdapter
+import com.example.instakotlinapp.utils.UniversalImageLoader
+import com.nostra13.universalimageloader.core.ImageLoader
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_home.bottomNavigationView
 
 class HomeActivity : AppCompatActivity() {
 
@@ -21,6 +21,7 @@ class HomeActivity : AppCompatActivity() {
 
         setupNavigationView()
         setupHomeViewPager()
+        initImageLoader()
     }
 
 
@@ -45,4 +46,10 @@ class HomeActivity : AppCompatActivity() {
 
         homeViewPager.setCurrentItem(1)                        // index of HomeFragment
     }
+
+    private fun initImageLoader(){
+        var universalImageLoader = UniversalImageLoader(this)
+        ImageLoader.getInstance().init(universalImageLoader.config)
+    }
+
 }
